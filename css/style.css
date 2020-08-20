@@ -1,0 +1,214 @@
+*{
+	box-sizing: border-box;
+}
+
+html,body{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #232946;
+}
+
+.about, .Projects, .contact{
+	background-color: #b8c1ec;
+	width: 100%;
+}
+
+/*Styling for nav-bar*/
+.nav-bar ul li {
+	list-style-type: none;
+	display: inline;
+	padding-left: 10px ; 
+}
+
+a {
+	text-decoration: none;
+}
+
+.nav-bar{
+	text-align: right;
+	background-color:#eebbc3 ;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+}
+
+.nav-bar > ul > li > a:hover{
+	background-color: #232946;
+	color: #fffffe;
+}
+
+/*Font used*/
+@font-face{
+	font-family: space;
+	src:url('BioRhyme-Light.ttf');		
+}
+
+body{
+	font-family: space;
+}
+
+h2{
+	font-size: 50px;
+	text-align: center;
+	color: #fffffe;
+}
+
+h3{
+	font-size: 40px;
+	text-align: center;
+	color: #232946;
+}
+
+h4{
+	text-align: center;
+}
+
+#img1{
+	padding-left: 10%;
+	display: block;
+	margin: auto;
+}
+
+/*Styling for hire-me button*/
+.hire{
+	padding: 13px 42px 13px 42px;
+	border-radius: 20px;
+	display: block;
+	margin: auto;
+	background-color: #eebbc3;
+	color: #232946;
+	font-size: 20px;
+	transition-duration: 1s;
+}
+
+.hire:hover{
+	background-color: white;
+}
+
+/*Styling for about page*/
+.clearfix{
+	display: block;
+}
+
+.main{
+	background-color: #fffffe;
+	width: 55%;
+	float: left;
+	height:100%;
+	border-radius: 20px;
+
+}
+
+.aside{
+	float: right;
+	width: 35%;	
+	background-color: #fffffe;
+	height:100%;
+	border-radius: 20px;
+}
+
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+#img2{ 
+	border-radius: 50%;
+	display: block;
+	margin: auto;
+}
+
+.side{ 
+	line-height: 40px;
+}
+
+
+li{
+	list-style-type: none;
+}
+
+/*Styling icons for footer */
+#img7{
+	margin-left: 20%;
+}
+
+#img8, #img9, #img10{
+margin-left: 20%;	
+}
+
+/*Styling for footer */
+footer h4{
+	color: #fffffe;
+}
+
+footer a{
+	color:  #eebbc3;
+	margin: auto;
+}
+
+/*Styling for newsletter section */
+.newsletter{
+	background-color: #b8c1ec;
+}
+
+.newsletter h3{
+	font-size: 25px;
+}
+
+
+/*Styling for input*/
+input{
+	display: block;
+	margin: auto;
+	
+}
+
+#email{
+	padding: 20px;
+	width: 40%;
+}
+
+/*Styling for subscibe button*/
+#button{
+	border-radius: 10px;
+	background-color: #eebbc3;
+	color: #232946;
+	padding: 10px;
+}
+
+#button:hover{
+	background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
