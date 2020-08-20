@@ -24,8 +24,8 @@
 		<!--Home Page-->
 		<section class="down">
 			<a id="home">
-				<h2>Welcome to my portfolio</h2>
-				<img src="images/web.png" id="img1" alt="illustration of web developer" width="50%" height="50%">
+				<h2 class="glow">Hi, I'm Maureen</h2>
+				<img src="images/web.png" id="img1" alt="illustration of web developer" width="40%" height="40%">
 				<button class="hire">Hire Me</button>
 				<br>
 			</a>
@@ -83,6 +83,25 @@
 	<div class="contact" id="Contact">
 		<a id="Contact">
 			<h3>Contact Me</h3>
+
+			<div class="contactMe">
+				<form action="" name="contactMe" id="contactMe" method="POST" data-netlify="true" onsubmit="processForm">
+					<p>Name</p>
+					<input type="text" name="name" id="name" placeholder="Enter your name here">
+					<br>
+					<p>Email</p>
+					<input type="email" name="email" id="email" placeholder="Enter your email here">
+					<br>
+					<p>Phone Number</p>
+					<input type="text" name="Number" id="Number" placeholder="Enter your Number here">
+					<br>
+					<p>Leave a message </p>
+					<textarea rows="8" cols="3"></textarea>
+					<br>
+					<input type="submit" class ="submit" value="Send" id="button">		
+				</form>
+				<br>
+			</div>
 		</a>
 	</div>
 
@@ -94,7 +113,7 @@
 		<div class="newsletter">
 			<h3>Subscribe to my Newsletter </h3>
 			<form action="" name="Newsletter" id="Newsletter" method="POST" data-netlify="true" onsubmit="processForm">
-				<input type="email" name="email" id="email" placeholder="Enter your email here">
+				<input type="email" name="email" id="email2" placeholder="Enter your email here">
 				<br>
 				<input type="submit" class ="submit" value="Subscribe" id="button">
 				<br>
@@ -117,7 +136,6 @@
 
 </body>
 </html>
-
 
 
 
