@@ -155,9 +155,9 @@ footer h4{
 	color: #fffffe;
 }
 
-footer a{
-	color:  #eebbc3;
-	margin: auto;
+footer p{
+	color:  #fffffe;
+	text-align: center;
 }
 
 /*Styling for newsletter section */
@@ -168,7 +168,6 @@ footer a{
 .newsletter h3{
 	font-size: 25px;
 }
-
 
 /*Styling for input*/
 .newsletter input{
@@ -213,6 +212,26 @@ textarea{
 	width: 60%;
 }
 
+/*Designing the project cards with flexbox*/ 
+.container{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.container > div{
+	width: 40%;
+	height: 50%;
+	background-color: #fffffe;
+	border-radius: 20px;
+	margin: 10px auto;
+	text-align:center ;
+}
+
+.container > div >img{
+	display: block;
+	margin: auto;
+}
 
 @media screen and (max-width: 700px) {
         .main, .aside {
@@ -265,10 +284,18 @@ textarea{
 		padding: 10px ;
 		border-radius: 10px;
 		font-size: 15px;
-
+		}
 
 		.newsletter h3{
 		font-size: 20px;
+		}
+
+		.container{
+			flex-direction: column;
+		}
+
+		.container > div{
+			width: 70%;
 		}
 		
 }
