@@ -5,75 +5,159 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>My Portfolio</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">                                           
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
 
 	<!--NAVIGATION BAR LAYOUT-->
-	<div class="home">  	
-		<section class="nav-bar">
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#about">About Me</a></li>
-			 	<li><a href="#Projects"> My Projects</a></li>
-				<li><a href="#Contact"> Contact Me</a></li>
-			</ul>
-		</section>
 
-		<!--Home Page-->
-		<section class="down">
-			<a id="home">
-				<h2 class="glow 1">Hi, I'm Maureen</h2>
-				<img src="images/web.png" id="img1" alt="illustration of web developer" width="40%" height="40%">
-				<button class="hire">Hire Me</button>
-			</section>
+	<nav role="navigation">
+  		<div id="menuToggle">
+  			<input type="checkbox" />
+
+  			<span></span>
+    		<span></span>
+    		<span></span>
+
+    		 <ul id="menu">
+     			 <a href="#home"><li>Home</li></a>
+     			 <a href="#about"><li>About Me</li></a>
+     			 <a href="#Projects"><li>Projects</li></a>
+     			 <a href="#testimonials"><li>Testimonials</li></a>
+     			 <a href="#Contact"><li>Contact Me</li></a>
+    		</ul>
+ 		 </div>
+	</nav>
+    
+
+	<!--<div class="nav-bar">
+		<ul>
+			<li><img src="images/logo.png"></li>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#Projects"> My Projects</a></li>
+			<li><a href="#Contact"> Contact Me</a></li>
+		</ul>
+	</div>-->
+
+
+	<!--Home Page-->
+	<div class="home"> 
+
+		<div class="heading">
+			<h2 class="glow">Anyanwu Maureen</h2>
+			<h2 class="glow">Front-end Developer</h2>
+			<button class="learn"><a href="#about">Learn more</a></button>
+		</div>
+
 	</div>
+		
 	
 	<br><!--Line Spacing-->
 
 	<!--About Page-->
 	<div class="about">
 		<a id="about">
-			<h3>About Me</h3>
-			<div class="clearfix">	
+			<h3>About Me</h3>	
 				<!--Main Section in About Page-->
 				<div class ="main">
-					<h3>Who is Anyanwu Maureen?</h3>
 					<img src="images/dp.jpg" id="img2" alt="A picture of Maureen" width="25%" height="25%">
-					<section class="side">
-					<p>My name is Anyanwu Maureen. I am a self-taught <b style="color: #232946;">FRONT-END WEB DEVELOPER</b>. I am very conversant with the fundamentals of HTML, CSS and JavaScript. I am open to learning new things and meeting new people. For now, I design websites and make them look appealing to visitors. </p>
+					<section class="bio">
+					<p>My name is Anyanwu Maureen. I am a self-taught <b style="color: #232946;">FRONT-END WEB DEVELOPER</b>. I am very conversant with the fundamentals of HTML, CSS and JavaScript. I am open to learning new things and meeting new people.I can work effectively in a team. For now, I design websites and make them look appealing to visitors. </p>
 					</section>
 				</div>
 
-				<!--Aside Section in About Page-->
-				<div class="aside">
+				<hr>
+
+				<!--Skills Section in About Page-->
+				<div>
 					<h3>Skills</h3>
-						<ul>
-							<li><img src="images/html.png" width="40px" height="40px">HTML</li> 
-							<li><img src="images/css.png" width="40px" height="40px">CSS</li>
-							<li><img src="images/js.png" width="40px" height="40px">JavaScript </li>
-							<li><img src="images/git.png" width="40px" height="40px">Git and Github</li>
-						</ul>
-					<h3>Hobbies</h3>
-					<ul>
-						<li>Playing outdoor games</li>
-						<li>Travelling</li>
-						<li>Learning and sharing ideas, etc.</li>
-					</ul>
+						<div id="wrapD3Cube">
+						   	 <div id="D3Cube">
+						        <div id="side1"></div>
+						        <div id="side2"></div>
+						        <div id="side3"></div>
+						        <div id="side4"></div>
+						        <div id="side5"></div>
+						        <div id="side6"></div>
+						    </div>
+						</div>
+
+						<div class="skills">
+							<div class="technical">
+								<h3><u>Technical skills</u></h3>
+
+								<div class="skill-items">
+									<img src="images/001-html-5-logo.svg" width="100px" height="100px">
+									<h4>HTML</h4>
+								</div>
+								 
+								<div class="skill-items">
+									<img src="images/002-css-3.svg" width="100px" height="100px">
+									<h4>CSS</h4>
+								</div>
+								
+								<div class="skill-items">
+									<img src="images/003-javascript.svg" width="100px" height="100px">
+									<h4>JavaScript</h4> 
+								</div>
+								
+								<div class="skill-items">
+									<img src="images/004-git-logo.svg" width="100px" height="100px">
+									<h4>Git and Github</h4>
+								</div>
+
+							</div>
+
+							<div class="non-technical">
+
+								<h3><u>Non-Technical skills</u></h3>
+								<div class="skill-items"><h4>Analytical Skills</h4></div>
+								<div class="skill-items"><h4>Strong Communication Skills</h4></div>
+								<div class="skill-items"><h4>Problem Solving Skills</h4></div>
+								<div class="skill-items"><h4>Team Player</h4></div>
+								
+							</div>
+
+				</div>
+								
+			
+			
+
+			<!--Stats section-->
+			<div class="stats">
+				<div class="stat-item">
+					<h3>5 </h3>
+					<p>Projects Completed</p>
+				</div>
+
+				<div class="stat-item">
+					<h3>3</h3> 
+					<p>Coding Certifications</p>
+				</div>
+
+				<div class="stat-item">
+					<h3>0</h3>
+					<p>Company Websites</p>
+				</div>
+
+				<div class="stat-item">
+					<h3>1</h3>
+					<p>Year Of Experience</p>
 				</div>
 			</div>
-			<div class="stats">
-				<div><img src="images/project.png" width="40px" height="40px">4 Projects Completed</div>
-				<div><img src="images/certificate.png" width="40px" height="40px">2 Certifications</div>
-				<div><img src="images/website.png" width="40px" height="40px">0 Company Websites </div>
-				<div><img src="images/experience.png" width="40px" height="40px">1 Year Of Experience </div>
-			</div>
-
-			<h3>View my CV <a href="images/cv.pdf">here</h3>
+			
+			<h3 class="cv"> <a href="images/cv.pdf">View CV</h3>
 		</a>
 	</div>
 
+	<hr>
+	
 	<!--Projects Page-->
 	<div class="Projects" id="Projects">
 		<a id="Projects">
@@ -105,15 +189,39 @@
 				</div>
 			</div>
 		</a>
+
+			<hr>
+
+			<div class="testimonials">
+				<a id="testimonials">
+				<h3><u>Testimonials</u></h3>
+				<div class="testimonial-item">
+					<img src="images/testimonial.jpg" width="50%" height="50%" border="2px solid black">
+					<p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"</p>	
+					<p style="text-align: center;">~John Doe</p>
+				</div>
+			
+				<br>
+			
+				<div class="testimonial-item">
+					<img src="images/testimonial.jpg" width="50%" height="50%" border="2px solid black" >
+					<p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"</p>
+					<p style="text-align: center;">~Jane Doe</p>
+				</div>
+				</a>
+			</div>
 	</div>
+	
+	<hr>
 
 	<!--Contact Page-->
 	<div class="contact" id="Contact">
 		<a id="Contact">
-			<h3>Contact Me</h3>
+			<h3>Get In Touch</h3>
 
 			<div class="contactMe">
 				<form action="" name="contactMe" id="contactMe" method="POST" data-netlify="true" onsubmit="processForm">
+					<p><b>Want to talk? Send me a message, lets discuss.</b></p>
 					<p>Name</p>
 					<input type="text" name="name" id="name" placeholder="Enter your name here">
 					<br>
@@ -148,16 +256,7 @@
 			</form>	
 		</div>
 
-		<div class="testimonials">
-			<h4>Testimonials</h4>
-			<p>"lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"</p>
-			<p style="text-align: center;">~John Doe</p>
-			<br>
-			<p>"lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"</p>
-			<p style="text-align: center;">~Jane Doe</p>
-		</div>
-
-		<!--Social media link and attribution-->
+		<!--Social media links-->
 		<div>
 			<h4>Connect on Social Media</h4>
 				<a href="https://wa.me/+2349067212981"><img src="images/whatsapp.png" id="img7" alt="whatsapp icon"></a>
@@ -166,13 +265,11 @@
 				<a href="https://www.github.com/maura-dev"><img src="images/github.png" id="img10" alt="github icon"></a>
 		</div>
 
-		<p>Banner vector created by katemangostar-<a href="https://www.freepik.com/vectors/banner">www.freepik.com</a></p>
 		<p>&copy;Anyanwu Maureen 2020</p>
 	</footer>
 
 </body>
 </html>
-
 
 
 
