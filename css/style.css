@@ -23,10 +23,51 @@ body{
 	font-family: space, monospace;
 }
 
+/*Styling for nav-bar*/
+.nav-bar{
+	background-color: #97be98;
+	top: 0px;
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+	position: fixed;
+}
+
+.nav-bar ul{
+	margin: 0;
+	padding: 0;
+	display:flex;
+	justify-content: flex-end;
+}
+.nav-bar ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+
+/*.nav-bar ul li:first-child {
+  margin-right: auto;
+  padding-left: 10px;
+}*/
+
+.nav-bar ul li a{
+	text-decoration: none;
+	color: #fffffe;
+	line-height: 3em;
+  	padding: 15px;	
+}
+
+.nav-bar > ul > li > a:hover{
+	background-color:black;
+	color: #fffffe;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+
 /*HAMBURGER MENU*/
 
 nav{
-	position:;
+	display: none;
 }
 #menuToggle
 {
@@ -146,46 +187,6 @@ nav{
   transform: none;
 }
 
-
-/*Styling for nav-bar*/
-/*.nav-bar{
-	background-color: #97be98;
-	top: 0px;
-	width: 100%;
-	margin: 0;
-	overflow: hidden;
-}
-
-.nav-bar ul{
-	margin: 0;
-	padding: 0;
-	display:flex;
-	justify-content: flex-end;
-}
-.nav-bar ul li{
-	list-style-type: none;
-	display: inline-block;
-}
-
-.nav-bar ul li:first-child {
-  margin-right: auto;
-  padding-left: 10px;
-}
-
-.nav-bar ul li a{
-	text-decoration: none;
-	color: #fffffe;
-	line-height: 3em;
-  	padding: 15px;	
-}
-
-.nav-bar > ul > li > a:hover{
-	background-color: ;
-	color: #fffffe;
-	padding: 5px;
-	border-radius: 10px;
-}*/
-
 /*Styling my glowing heading*/
 .glow{
 	font-size: 50px;
@@ -242,8 +243,7 @@ h4{
 	display: block;
 	margin: auto;
 	border-radius: 10px;
-	margin-top:30px;
-	margin-bottom: 30px;
+	margin-bottom: 8%;
 	background-color:#97be98;
 	color: #fffffe;
 	font-size: 20px;
@@ -383,7 +383,7 @@ h4{
 }
 
 /*Skills section*/
-.technical, .non-technical{
+.technical , .non-technical{
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -393,7 +393,7 @@ h4{
 
 .skill-items{
 	border: 2px solid black;
-	width:15%;
+	width:20%;
 	padding: 10px;
 	border-radius: 20px;
 	box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
@@ -583,13 +583,27 @@ footer p{
 }
 
 @media screen and (max-width: 700px) {
+		nav{
+			display: block;
+		}
+
+		.nav-bar{
+			display: none;
+		}
 		.home{
 			padding-top:20px;
 		}
 		
 		.heading{	
 			width:90%;
-			height:80%;	
+			height:70%;
+			padding-top: 20px;
+			margin-top: 20%;	
+		}
+
+		.learn{
+			margin-top: 15%;
+			margin-bottom: 15%;
 		}
 		
 		.skill-items{
