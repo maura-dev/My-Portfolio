@@ -8,10 +8,6 @@ html,body{
 	padding: 0;
 }
 
-.about, .Projects, .contact{
-	width: 100%;
-}
-
 /*Font used*/
 @font-face{
 	font-family: space;
@@ -496,6 +492,96 @@ h4{
 	margin:auto;
 }
 
+
+/*Styling my masonry grid*/
+.grid{
+	 display: grid;
+	 grid-template-columns: repeat(5, 1fr);
+	 grid-template-rows: repeat(4, 1fr);
+}
+
+.grid-items img{
+	display: none;
+}
+
+.one{
+	grid-column:1/span 2;
+	grid-row: 1/ span 1;
+	border: 2px solid black;
+	height:200px;
+	background-image: url("../images/img3.jpg");
+	background-size: cover;
+}
+
+.two{
+	grid-row:2/span 3;
+	border: 2px solid black;
+	background-image: url("../images/img2.jpg");
+	background-size: cover;
+}
+
+.three{
+	grid-column:4/span 6;
+	grid-row:1/span 2;
+	border: 2px solid black;
+	background-image: url("../images/img5.jpg");
+	background-size: cover;
+}
+
+.four{
+	grid-column:3/ span 1;
+	border: 2px solid black;
+	background-image: url("../images/img4.jpg");
+	background-size: cover;
+}
+
+.five{
+	grid-column: 2/ span 2;
+	grid-row:2/ span 2;
+	border: 2px solid black;
+	background-image: url("../images/img1.jpg");
+	background-size: cover;
+}
+
+.six{
+	grid-column: 4/ span 1;
+	grid-row:3/ span 2;
+	border: 2px solid black;
+	background-image: url("../images/img6.jpg");
+	background-size: cover;
+}
+
+.seven{
+	grid-column:5/span 1;
+	grid-row:3/span 1;
+	border: 2px solid black;
+	background-image: url("../images/img2.jpg");
+	background-size: cover;
+}
+
+.eight{
+	grid-column: 5/ span 1;
+	grid-row: 4/ span 1;
+	border: 2px solid black;
+	background-image: url("../images/img1.jpg");
+	background-size: cover;
+}
+
+.nine{
+	grid-column: 2/ span 1;
+	grid-row: 4/ span 1;
+	border: 2px solid black;
+	background-image: url("../images/img2.jpg");
+	background-size: cover;
+}
+
+.ten{
+	grid-column: 3/ span 1;
+	grid-row: 4/ span 1;
+	border: 2px solid black;
+	background-image: url("../images/img5.jpg");
+	background-size: cover;
+}
 /*Styling my contact form*/
 .contactMe{
 	background-color: #fffffe;
