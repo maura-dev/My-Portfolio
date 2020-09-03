@@ -5,10 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>My Portfolio</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-	<link rel="manifest" href="favicon/site.webmanifest">                                           
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">                                      
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -16,17 +13,20 @@
 
 	<!--NAVIGATION BAR LAYOUT-->
 	<div class="nav-bar">
+		<img src="images/logo.png" width="50px" height="50px" align="left">
 		<ul>
-			<!--<li><img src="images/logo.png"></li>-->
 			<li><a href="#home">Home</a></li>
 			<li><a href="#about">About Me</a></li>
 			<li><a href="#Projects"> My Projects</a></li>
 			<li><a href="#testimonials">Testimonials</a></li>
 			<li><a href="#Contact"> Contact Me</a></li>
+			<li><a href="#gallery">Gallery</a></li>
 		</ul>
 	</div>
 
+	<!--Hamburger menu-->
 	<nav role="navigation">
+		<img src="images/logo.png" width="50px" height="auto" align="right">
   		<div id="menuToggle">
   			<input type="checkbox" />
 
@@ -34,17 +34,20 @@
     		<span></span>
     		<span></span>
 
+
     		 <ul id="menu">
      			 <a href="#home"><li>Home</li></a>
      			 <a href="#about"><li>About Me</li></a>
      			 <a href="#Projects"><li>Projects</li></a>
      			 <a href="#testimonials"><li>Testimonials</li></a>
      			 <a href="#Contact"><li>Contact Me</li></a>
+     			 <a href="#gallery"><li>Gallery</li></a>
     		</ul>
  		 </div>
 	</nav>
 
 	<!--Home Page-->
+	<a id="home">
 	<div class="home"> 
 
 		<div class="heading">
@@ -52,9 +55,8 @@
 			<h2 class="glow">Front-end Developer</h2>
 			<button class="learn"><a href="#about">Learn more</a></button>
 		</div>
-
 	</div>
-		
+	</a>	
 	
 	<br><!--Line Spacing-->
 
@@ -66,7 +68,7 @@
 				<div class ="main">
 					<img src="images/dp.jpg" id="img2" alt="A picture of Maureen" width="25%" height="25%">
 					<section class="bio">
-					<p>My name is Anyanwu Maureen. I am a self-taught <b style="color: #232946;">FRONT-END WEB DEVELOPER</b>. I am very conversant with the fundamentals of HTML, CSS and JavaScript. I am open to learning new things and meeting new people.I can work effectively in a team. For now, I design websites and make them look appealing to visitors. </p>
+					<p>My name is Anyanwu Maureen, a <b style="color: #232946;">FRONT-END WEB DEVELOPER</b>. I am very conversant with the fundamentals of HTML, CSS and JavaScript. I am open to learning new things and meeting new people.I can work effectively in a team. For now, I design websites and make them look appealing to visitors. </p>
 					</section>
 				</div>
 
@@ -130,32 +132,33 @@
 							</div>
 
 				</div>
-								
-			
-			
 
-			<!--Stats section-->
-			<div class="stats">
-				<div class="stat-item">
-					<h3>5 </h3>
-					<p>Projects Completed</p>
-				</div>
+				<!--Stats section-->
+				<div class="stats">
+					<div class="stat-item">
+						<img src="images/004-sharing.svg" width="50%" height="50%">
+						<h3>5 </h3>
+						<p>Projects Completed</p>
+					</div>
 
-				<div class="stat-item">
-					<h3>3</h3> 
-					<p>Coding Certifications</p>
-				</div>
+					<div class="stat-item">
+						<img src="images/002-badge.svg" width="50%" height="50%">
+						<h3>3</h3> 
+						<p>Coding Certifications</p>
+					</div>
 
-				<div class="stat-item">
-					<h3>0</h3>
-					<p>Company Websites</p>
-				</div>
+					<div class="stat-item">
+						<img src="images/003-web-search-engine.svg" width="50%" height="50%">
+						<h3>0</h3>
+						<p>Company Websites</p>
+					</div>
 
-				<div class="stat-item">
-					<h3>1</h3>
-					<p>Year Of Experience</p>
+					<div class="stat-item">
+						<img src="images/001-presentation.svg" width="50%" height="50%">
+						<h3>1</h3>
+						<p>Year Of Experience</p>
+					</div>
 				</div>
-			</div>
 			
 			<h3 class="cv"> <a href="images/cv.pdf">View CV</h3>
 		</a>
@@ -168,25 +171,25 @@
 		<a id="Projects">
 			<h3>Projects</h3>
 			<div class="container">
-				<div>
+				<div class="container-items">
 					<h4>A tribute page to Martin Luther King</h4>
 					<img src="images/tribute.png" width="60%" height="60%">
 					<p>Click <a href="https://github.com/maura-dev/A-Tribute-page">here</a> to view repository </p>
 					<p>Click <a href="https://maura-dev.github.io/A-Tribute-page/">here</a> for live view</p>
 				</div>
-				<div>
+				<div class="container-items">
 					<h4>A CSS Phone</h4>
 					<img src="images/phone.png" width="60%" height="60%">
 					<p>Click <a href="https://github.com/maura-dev/CSS-Phone">here</a> to view repository </p>
 					<p>Click <a href="https://codepen.io/maura-dev/full/LYGMzrJ">here</a> for live view</p>
 				</div>
-				<div>
+				<div class="container-items">
 					<h4>A Registration form for a web development bootcamp</h4>
 					<img src="images/form.png" width="60%" height="60%">
 					<p>Click <a href="https://github.com/maura-dev/formPage">here</a> to view repository </p>
 					<p>Click <a href="https://codepen.io/maura-dev/full/PoZRRVP">here</a> for live view</p>
 				</div>
-				<div>
+				<div class="container-items">
 					<h4>A Signup form for TIIDElab fellowship</h4>
 					<img src="images/tiide.png" width="60%" height="60%">
 					<p>Click <a href="https://github.com/maura-dev/Tiidelab">here</a> to view repository </p>
@@ -194,29 +197,32 @@
 				</div>
 			</div>
 		</a>
+	</div>
 
 			<hr>
 
-			<div class="testimonials">
-				<a id="testimonials">
-				<h3><u>Testimonials</u></h3>
-				<div class="testimonial-item">
-					<img src="images/testimonial.jpg" width="50%" height="50%" border="2px solid black">
-					<p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"</p>	
-					<p style="text-align: center;">~John Doe</p>
-				</div>
-			
-				<br>
-			
-				<div class="testimonial-item">
-					<img src="images/testimonial.jpg" width="50%" height="50%" border="2px solid black" >
-					<p>"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa"</p>
-					<p style="text-align: center;">~Jane Doe</p>
-				</div>
-				</a>
+	<!--Testimonials-->
+	<div class="testimonials">
+		<a id="testimonials">
+			<h3><u>Testimonials</u></h3>
+
+			<div class="testimonial-item">
+				<img src="images/benita.jpg" width="50%" height="50%" border="2px solid black">
+				<p>"Maureen is a very promising and enthusiastic girl who is always ready to work and never fails to carry other people along. She is a very good team player."</p>	
+				<p style="text-align: center;">~Eze Benita</p>
 			</div>
+		
+			<br>
+		
+			<div class="testimonial-item">
+				<img src="images/chile.jpg" width="50%" height="50%" border="2px solid black" >
+				<p>"She is a very wonderful person and knows how to get the work done. She is very good with leadership roles and knows how to work alongside a team of other talented individuals.  "</p>
+				<p style="text-align: center;">~Chile Maurice</p>
+			</div>
+
+		</a>
 	</div>
-	
+
 	<hr>
 
 	<!--Contact Page-->
@@ -248,22 +254,28 @@
 
 	<hr><!--Adding An Horizontal Rule Line-->
 
-	<div>
-		<h3>Gallery</h3>
+	<!--Image gallery-->
+	<a id="gallery">
+		<div>
+			<h3>Gallery</h3>
 
-		<div class="grid">
-			<div class="grid-items, one"></div>
-			<div class="grid-items, two"></div>
-			<div class="grid-items, three"></div>
-			<div class="grid-items, four"></div>
-			<div class="grid-items, five"></div>
-			<div class="grid-items, six"></div>
-			<div class="grid-items, seven"></div>
-			<div class="grid-items, eight"></div>
-			<div class="grid-items, nine"></div>
-			<div class="grid-items, ten"></div>
+			<div class="grid-container">
+				<div class="images"><img src="images/img1.jpg"></div>
+				<div class="images"><img src="images/img5.jpg"></div>
+				<div class="images"><img src="images/img2.jpg"></div>
+				<div class="images"><img src="images/img6.jpg"></div>
+				<div class="images"><img src="images/img1.jpg"></div>
+				<div class="images"><img src="images/img5.jpg"></div>
+				<div class="images"><img src="images/img2.jpg"></div>
+				<div class="images"><img src="images/img5.jpg"></div>
+				<div class="images"><img src="images/img1.jpg"></div>
+				<div class="images"><img src="images/img1.jpg"></div>
+				<div class="images"><img src="images/img5.jpg"></div>
+				<div class="images"><img src="images/img2.jpg"></div>
+
+				</div>
 		</div>
-	</div>
+	</a>
 
 	<br>
 
@@ -284,7 +296,7 @@
 		<div>
 			<h4>Connect on Social Media</h4>
 				<a href="https://wa.me/+2349067212981"><img src="images/whatsapp.png" id="img7" alt="whatsapp icon"></a>
-				<a href="https://instagram.com/reen_ie"><img src="images/ig.png" id="img8" alt="instagram icon"></a>
+				<a href="https://www.linkedin.com/in/maureen-anyanwu-4b37aa1b4"><img src="images/linkedin.png" id="img8" alt="instagram icon"></a>
 				<a href="https://twitter.com/anyanwu_maureen"><img src="images/twitter.png" id="img9" alt="twitter icon"></a>
 				<a href="https://www.github.com/maura-dev"><img src="images/github.png" id="img10" alt="github icon"></a>
 		</div>

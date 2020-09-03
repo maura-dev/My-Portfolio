@@ -40,11 +40,6 @@ body{
 	display: inline-block;
 }
 
-/*.nav-bar ul li:first-child {
-  margin-right: auto;
-  padding-left: 10px;
-}*/
-
 .nav-bar ul li a{
 	text-decoration: none;
 	color: #fffffe;
@@ -69,12 +64,16 @@ nav{
 {
   display: block;
   position: relative;
-  top:0;
+  top:15px;
   margin:0;
  /* z-index: 1;*/
   user-select: none;
-  margin-top:10px;
+  margin-bottom:29px;
   padding-left: 10px;
+}
+
+nav img{
+	margin-top: 0px;
 }
 
 #menuToggle a
@@ -260,9 +259,9 @@ h4{
 	border: 2px solid black;
 	border-radius: 20px;
 	margin: auto;
-	box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-webkit-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-moz-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
+	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-moz-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
 }
 
 #img2{ 
@@ -390,9 +389,9 @@ h4{
 	width:20%;
 	padding: 10px;
 	border-radius: 20px;
-	box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-webkit-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-moz-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
+	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-moz-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
 }
 
 .skill-items img{
@@ -417,29 +416,34 @@ h4{
 	border: 1px hidden;
 	display: inline-block;	
 	width: 20%;
-	height:130px;
+	height:100px;
 	text-align: center;
+	
 }
 
 .stat-item h3{
 	color:#fffffe;
 	font-weight: 700;
 	font-size: 50px;
-	margin: 10px;
+	margin:0px;
 }
 
 .cv{
 	padding:20px;
 	border: 2px solid black;
 	color:white;
-	width:40%;
+	width:30%;
 	margin:auto;
 	margin-top: 70px;
 	margin-bottom: 50px;
 	border-radius:10px;
-	box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-webkit-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-moz-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
+	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-moz-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+}
+
+.cv a{
+	text-decoration: none;
 }
 
 /*Designing the project cards with flexbox*/ 
@@ -450,20 +454,23 @@ h4{
 	margin-bottom: 50px;
 }
 
-.container > div{
+.container-items{
 	width: 40%;
-	height: 50%;
+	height: 60%;
 	background-color: #fffffe;
 	border-radius: 20px;
 	margin: 10px auto;
 	text-align:center ;
 }
 
-.container > div >img{
+.container-items > img{
 	display: block;
 	margin: auto;
 }
 
+.container-items > p > a{
+	text-decoration: none;
+}
 /*Testimonials*/
 .testimonials{
 	display: flex;
@@ -482,9 +489,9 @@ h4{
 	margin:auto;
 	border-radius:10px;
 	text-align:center;
-	box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-webkit-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-moz-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
+	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-moz-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
 }
 
 .testimonial-item img{
@@ -492,96 +499,6 @@ h4{
 	margin:auto;
 }
 
-
-/*Styling my masonry grid*/
-.grid{
-	 display: grid;
-	 grid-template-columns: repeat(5, 1fr);
-	 grid-template-rows: repeat(4, 1fr);
-}
-
-.grid-items img{
-	display: none;
-}
-
-.one{
-	grid-column:1/span 2;
-	grid-row: 1/ span 1;
-	border: 2px solid black;
-	height:200px;
-	background-image: url("../images/img3.jpg");
-	background-size: cover;
-}
-
-.two{
-	grid-row:2/span 3;
-	border: 2px solid black;
-	background-image: url("../images/img2.jpg");
-	background-size: cover;
-}
-
-.three{
-	grid-column:4/span 6;
-	grid-row:1/span 2;
-	border: 2px solid black;
-	background-image: url("../images/img5.jpg");
-	background-size: cover;
-}
-
-.four{
-	grid-column:3/ span 1;
-	border: 2px solid black;
-	background-image: url("../images/img4.jpg");
-	background-size: cover;
-}
-
-.five{
-	grid-column: 2/ span 2;
-	grid-row:2/ span 2;
-	border: 2px solid black;
-	background-image: url("../images/img1.jpg");
-	background-size: cover;
-}
-
-.six{
-	grid-column: 4/ span 1;
-	grid-row:3/ span 2;
-	border: 2px solid black;
-	background-image: url("../images/img6.jpg");
-	background-size: cover;
-}
-
-.seven{
-	grid-column:5/span 1;
-	grid-row:3/span 1;
-	border: 2px solid black;
-	background-image: url("../images/img2.jpg");
-	background-size: cover;
-}
-
-.eight{
-	grid-column: 5/ span 1;
-	grid-row: 4/ span 1;
-	border: 2px solid black;
-	background-image: url("../images/img1.jpg");
-	background-size: cover;
-}
-
-.nine{
-	grid-column: 2/ span 1;
-	grid-row: 4/ span 1;
-	border: 2px solid black;
-	background-image: url("../images/img2.jpg");
-	background-size: cover;
-}
-
-.ten{
-	grid-column: 3/ span 1;
-	grid-row: 4/ span 1;
-	border: 2px solid black;
-	background-image: url("../images/img5.jpg");
-	background-size: cover;
-}
 /*Styling my contact form*/
 .contactMe{
 	background-color: #fffffe;
@@ -589,9 +506,9 @@ h4{
 	margin: auto;
 	margin-bottom:50px;
 	text-align: center;
-	box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-webkit-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
-	-moz-box-shadow: -13px 42px 25px 6px rgba(15,16,16,0.57);
+	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-moz-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
 }
 
 #name, #email, #Number{
@@ -603,6 +520,19 @@ h4{
 
 textarea{
 	width: 60%;
+}
+
+/*My masonry grid*/
+.grid-container{
+	background-color: black;
+	padding: 5px;
+	column-count: 4;
+	border:2px solid black;		
+}
+
+.images > img{
+	width: 100%;
+	margin-bottom:5px;
 }
 
 /*Styling for newsletter section */
@@ -695,6 +625,7 @@ footer p{
 			margin-bottom:50px;
 		}
 
+
 		.testimonials{
 			display: flex;
 			flex-direction: column;
@@ -712,7 +643,7 @@ footer p{
         .main, .aside {
            display: block;
            width:90%;
-           float:none;
+         `  float:none;
            margin:20px auto 20px auto;
            padding:10px;
         }
@@ -759,6 +690,10 @@ footer p{
 		.testimonial-item{
 			width:80%;
 		}
+
+		.cv{
+			width: 50%;
+		}
 		.contactMe{
 		width:90%;
 		}
@@ -784,14 +719,14 @@ footer p{
 			width: 70%;
 		}
 
-	.stats{
-		flex-wrap: wrap;
-		height: 400px;
-	}
+		.stats{
+			flex-wrap: wrap;
+			height: 400px;
+		}
 	
-	.stat-item{
-		width: 50%;
-	}	
+		.stat-item{
+			width: 50%;
+		}	
 }
 
 @media screen and (max-width: 400px){
@@ -801,11 +736,12 @@ footer p{
 
 	.stats{
 		flex-wrap: wrap;
-		height:600px;
+		height:950px;
 	}
 
 	.stat-item{
 		width: 100%;
+		margin: 50px;
 	}
 }
 
