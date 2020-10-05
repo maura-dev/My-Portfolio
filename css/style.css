@@ -42,7 +42,7 @@ body{
 
 .nav-bar ul li a{
 	text-decoration: none;
-	color: #fffffe;
+	color:#232946;
 	line-height: 3em;
   	padding: 15px;	
 }
@@ -50,7 +50,7 @@ body{
 .nav-bar > ul > li > a:hover{
 	background-color:black;
 	color: #fffffe;
-	padding: 5px;
+	padding: 10px;
 	border-radius: 10px;
 }
 
@@ -60,13 +60,12 @@ body{
 nav{
 	display: none;
 }
-#menuToggle
-{
+
+#menuToggle{
   display: block;
   position: relative;
   top:15px;
   margin:0;
- /* z-index: 1;*/
   user-select: none;
   margin-bottom:29px;
   padding-left: 10px;
@@ -76,21 +75,13 @@ nav img{
 	margin-top: 0px;
 }
 
-#menuToggle a
-{
+#menuToggle a{
   text-decoration: none;
   color: #232323;
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
-  color: tomato;
-}
-
-
-#menuToggle input
-{
+#menuToggle input{
   display: block;
   width: 40px;
   height: 32px;
@@ -98,14 +89,12 @@ nav img{
   top: -7px;
   left: -5px;
   cursor: pointer;
-  
   opacity: 0; 
   z-index: 2; 
   
 }
 
-#menuToggle span
-{
+#menuToggle span{
   display: block;
   width: 33px;
   height: 4px;
@@ -117,48 +106,40 @@ nav img{
   z-index: 1;
   padding-left: 10px;
   transform-origin: 4px 0px;
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child{
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2){
   transform-origin: 0% 100%;
 }
 
-#menuToggle input:checked ~ span
-{
+#menuToggle input:checked ~ span{
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
   background: #232323;
 }
 
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
+#menuToggle input:checked ~ span:nth-last-child(3){
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2){
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-#menu
-{
+#menu{
   position: absolute;
   width: 100%;
-  margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
+  height:100vh;
+  padding-top: 100px;
+  padding-left: 0px;
   background-color:black;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
@@ -170,11 +151,17 @@ nav img{
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
-  padding: 10px 0;
+#menu li{
+  padding: 10px 0px 10px 0px;
   font-size: 22px;
   color:white;
+  text-align: center;
+}
+
+#menu li:hover{
+	background-color:#97be98;
+	border-radius:10px;
+	margin-right:5px;
 }
 
 #menuToggle input:checked ~ ul
@@ -219,25 +206,34 @@ h4{
 	background-size: cover;
 }
 
+button{
+	outline-style: none;
+}
+
+button:hover{
+	box-shadow: 4px 4px 4px 4px rgba(89,245,214,0.5);
+}
+
 /*Styling heading container*/
 .heading{
 	width: 60%;
-	height:70%;
+	height:auto;
 	border:2px solid #daffef;
 	border-radius: 20px;
 	margin:auto;
-	box-shadow: 10px 10px 5px 0px rgba(89,245,214,0.5);
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(89,245,214,0.5);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(89,245,214,0.5);
+	box-shadow: 10px 10px 5px 0px #97be98;
+	-webkit-box-shadow: 10px 10px 5px 0px #97be98;
+	-moz-box-shadow: 10px 10px 5px 0px #97be98;
 }
 
 /*Styling for learn-more button*/
 .learn{
-	padding: 13px 42px 13px 42px;
+	padding: 10px;
 	display: block;
-	margin: auto;
+	margin: 0px auto 20px auto;
 	border-radius: 10px;
 	background-color:#97be98;
+	border:2px solid #97be98;
 	color: #fffffe;
 	font-size: 20px;
 	transition-duration: 1s;
@@ -249,7 +245,9 @@ h4{
 }
 
 .learn:hover{
-	background-color: white;
+	background-color: black;
+	box-shadow: 4px 4px 4px 4px #97be98;
+	padding: 15px;
 }
 
 /*Styling for about page*/
@@ -275,13 +273,13 @@ h4{
 }
 
 /*3D Cube animation*/
-#wrapD3Cube {
+#Cube {
     width: 250px;
     height: 213px;
     margin: 20px auto;
 }
 
-#D3Cube {
+#skillsCube {
     width: 112px;
     height: 112px;
     top: 50px;
@@ -298,7 +296,7 @@ h4{
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
 }
-#D3Cube > div {
+#skillsCube > div {
     position: absolute;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -360,7 +358,7 @@ h4{
     background-color: white;
 }
 
-#D3Cube {
+#skillsCube {
     -webkit-animation: cubeRotation 5s infinite; /* Safari 4.0 - 8.0 */
     animation: cubeRotation 5s infinite;
 }
@@ -429,21 +427,27 @@ h4{
 }
 
 .cv{
-	padding:20px;
+	padding:15px;
 	border: 2px solid black;
 	color:white;
-	width:30%;
+	width: 15%;
 	margin:auto;
 	margin-top: 70px;
 	margin-bottom: 50px;
 	border-radius:10px;
-	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
-	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
-	-moz-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	text-align: center;
+	
 }
 
 .cv a{
 	text-decoration: none;
+}
+
+.cv:hover{
+	padding:20px;
+	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
+	-moz-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);	
 }
 
 /*Designing the project cards with flexbox*/ 
@@ -461,16 +465,41 @@ h4{
 	border-radius: 20px;
 	margin: 10px auto;
 	text-align:center ;
+	padding:10px;
 }
 
 .container-items > img{
+	border:5px solid black;
+	border-radius:10px;
 	display: block;
-	margin: auto;
+	margin:auto ;
 }
 
-.container-items > p > a{
-	text-decoration: none;
+#tribute{
+	border:5px solid black;
+	border-radius:10px;
+	display:block;
+	margin:auto;
 }
+
+.container-items > a{
+	text-decoration: none;
+	color:#232946;
+	padding:5px;
+	width:70px;
+	border-radius: 10px;
+	background-color: #97be98;
+	display: inline-block;
+	margin:10px;
+}
+
+.container-items > a:hover{
+	box-shadow:2px 2px 2px 2px #97be98;
+	background-color: black;
+	color:#fffffe;
+	padding:10px;
+}
+
 /*Testimonials*/
 .testimonials{
 	display: flex;
@@ -484,8 +513,10 @@ h4{
 
 .testimonial-item{
 	background-color:black;
+	border-top:5px solid #97be98;
 	color:white;
-	width:30%;
+	width:35%;
+	padding:10px;
 	margin:auto;
 	border-radius:10px;
 	text-align:center;
@@ -495,6 +526,10 @@ h4{
 }
 
 .testimonial-item img{
+	border-left:5px solid #97be98;
+	border-right:5px solid #97be98;
+	border-bottom:5px solid #97be98;
+	border-radius:10px;
 	display:block;
 	margin:auto;
 }
@@ -502,9 +537,11 @@ h4{
 /*Styling my contact form*/
 .contactMe{
 	background-color: #fffffe;
-	width: 55%;
+	width: 60%;
 	margin: auto;
 	margin-bottom:50px;
+	border-top:50px solid black;
+	border-top-right-radius:20px;
 	text-align: center;
 	box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
 	-webkit-box-shadow: -13px 20px 25px 6px rgba(15,16,16,0.57);
@@ -516,6 +553,11 @@ h4{
 	padding: 15px;
 	background-color:silver;
 	width: 40%; 
+}
+
+input{
+	outline-style: none;
+	border:2px solid silver;
 }
 
 textarea{
@@ -542,9 +584,9 @@ textarea{
 	border:2px solid #daffef;
 	margin: auto;
 	border-radius: 20px;
-	box-shadow: 10px 10px 5px 0px rgba(89,245,214,0.5);
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(89,245,214,0.5);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(89,245,214,0.5);
+	box-shadow: 10px 10px 5px 0px #97be98;
+	-webkit-box-shadow: 10px 10px 5px 0px #97be98;
+	-moz-box-shadow: 10px 10px 5px 0px #97be98;
 }
 
 .newsletter h3{
@@ -560,20 +602,25 @@ textarea{
 
 #email2{
 	padding: 15px;
-	width: 70%;
+	width: 40%;
 	border-radius: 20px;
 }
 
 /*Styling for subscibe button*/
 #button{
+	border:2px solid #97be98;
 	border-radius: 10px;
 	background-color: #97be98;
 	color: #232946;
-	padding: 10px;
+	padding: 10px 20px 10px 20px;
+
 }
 
 #button:hover{
-	background-color: white;
+	padding:12px 22px 12px 22px;
+	background-color: black;
+	color:#fffffe;
+	box-shadow: 2px 2px 2px 2px #97be98;
 }
 
 /*Styling icons for footer */
@@ -594,11 +641,22 @@ footer h4{
 footer p{
 	color:  #fffffe;
 	text-align: center;
+	margin-bottom:0px;
 }
 
 @media screen and (max-width: 912px) {
-	.heading{
-		height:90%;
+
+	.skill-items{
+		width:40%;
+		margin-bottom: 40px;
+	}
+
+	.cv{
+		width:30%;
+	}
+
+	.container-items{
+		width:60%;
 	}
 }
 
@@ -616,8 +674,10 @@ footer p{
 		
 		.heading{	
 			width:90%;
-			height:60%;
 			margin-top: 20%;	
+		}
+		.learn{
+			margin-bottom: 20px;
 		}
 
 		.skill-items{
@@ -646,6 +706,11 @@ footer p{
          `  float:none;
            margin:20px auto 20px auto;
            padding:10px;
+        }
+
+        .contactMe{
+        	width:80%;
+        	padding:10px;
         }
         
         #name, #email, #Number,#email2{
@@ -694,21 +759,19 @@ footer p{
 		.cv{
 			width: 50%;
 		}
-		.contactMe{
-		width:90%;
-		}
 		
 		.learn{
-		padding: 10px;
-		border-radius: 10px;
-		font-size: 15px;
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 15px;
 		}
 
 		.newsletter{
 			width:80%;
 		}
+
 		.newsletter h3{
-		font-size: 20px;
+			font-size: 20px;
 		}
 
 		.container{
@@ -730,9 +793,6 @@ footer p{
 }
 
 @media screen and (max-width: 400px){
-	.heading{
-		height:75%;
-	}
 
 	.stats{
 		flex-wrap: wrap;
@@ -747,8 +807,11 @@ footer p{
 
 @media screen and (min-height: 800px){
 	.heading{
-		height: 60%;
 		margin-top: 25%;
+	}
+
+	.learn{
+		margin-bottom: 20px;
 	}
 }
 
